@@ -1,0 +1,87 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .task-item.completed .task-title {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .checkbox-wrapper input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #509EB1;
+    cursor: pointer;
+  }
+  
+  .checkbox-wrapper input[type="checkbox"]:checked {
+    background-color: #509EB1;
+  }
+  
+  .checkbox-wrapper input[type="checkbox"]:checked:after {
+    content: '✔';
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .task-title-and-content {
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  
+  .task-title {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .read-more, .read-less {
+    color: #509EB1;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .task-content {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .task-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .control-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .delete-icon {
+    color: black;
+  }
+  
+  .edit-icon {
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .task-item {
+      flex-direction: column;
+    }
+  }
+  
